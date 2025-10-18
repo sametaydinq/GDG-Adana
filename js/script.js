@@ -1,5 +1,5 @@
 let currentTheme = 'dark';
-let currentLang = 'en';
+let currentLang = 'tr';
 
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -22,7 +22,7 @@ function setLanguage(lang) {
     const mobileLangToggle = document.getElementById('mobileLangToggle');
     const elementsToTranslate = document.querySelectorAll('.translate');
     currentLang = lang;
-    
+
     if (lang === 'tr') {
         desktopLangToggle.textContent = 'TR';
         mobileLangToggle.innerHTML = '<span class="translate" data-tr="Türkçe">Türkçe</span>';
@@ -86,7 +86,7 @@ class Particle {
         this.opacity = Math.random() * 0.5 + 0.2;
         this.color = ['#4285f4', '#ea4335', '#fbbc04', '#34a853'][Math.floor(Math.random() * 4)];
     }
-    
+
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
@@ -95,7 +95,7 @@ class Particle {
         if (this.y > canvas.height) this.y = 0;
         if (this.y < 0) this.y = canvas.height;
     }
-    
+
     draw() {
         ctx.fillStyle = this.color;
         ctx.globalAlpha = this.opacity;
