@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG Adana - Innovate. Connect. Grow.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img class="gdg-logo" style="width: 60px; height: 40px;" src="images/Logo.png" alt="logo">
+                <span class="logo-text">GDG</span> <span>Adana</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" class="translate" data-en="About" data-tr="Hakkımızda">About</a></li>
+                <li><a href="#events" class="translate" data-en="Events" data-tr="Etkinlikler">Events</a></li>
+                <li><a href="#join" class="translate" data-en="Join Us" data-tr="Bize Katılın">Join Us</a></li>
+                <li><a href="#team" class="translate" data-en="Team" data-tr="Ekip">Team</a></li>
+                <li><a href="#faq" class="translate" data-en="FAQ" data-tr="SSS">FAQ</a></li>
+            </ul>
+            <button class="lang-toggle desktop-lang-toggle" id="desktopLangToggle">EN</button>
+            <button class="theme-toggle desktop-theme-toggle" id="themeToggle"><img id="theme" style="width: 20px; height: 20px;" src="images/night-mode.png" alt="dark-light"></button>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="translate mobile-link" data-en="About" data-tr="Hakkımızda">About</a></li>
+            <li><a href="#events" class="translate mobile-link" data-en="Events" data-tr="Etkinlikler">Events</a></li>
+            <li><a href="#join" class="translate mobile-link" data-en="Join Us" data-tr="Bize Katılın">Join Us</a></li>
+            <li><a href="#team" class="translate mobile-link" data-en="Team" data-tr="Ekip">Team</a></li>
+            <li><a href="#faq" class="translate mobile-link" data-en="FAQ" data-tr="SSS">FAQ</a></li>
+        </ul>
+        <button class="mobile-lang-toggle" id="mobileLangToggle">
+            <span class="translate" data-en="English" data-tr="Türkçe">English</span>
+        </button>
+        <button class="mobile-theme-toggle" id="mobileThemeToggle">
+            <img id="mobileTheme" style="width: 20px; height: 20px;" src="images/night-mode.png" alt="dark-light">
+            <span class="translate" data-en="Theme" data-tr="Tema">Theme</span>
+        </button>
+    </div>
+
+    <div class="page-bg">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="floating-shape shape1"></div>
+            <div class="floating-shape shape2"></div>
+            <div class="floating-shape shape3"></div>
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <h1 class="translate" data-en="Innovate. Connect. Grow." data-tr="Yenilik Yap. Bağlan. Geliş.">Innovate. Connect. Grow.</h1>
+            <p class="translate" data-en="Join a vibrant community of developers, creators, and tech enthusiasts pushing boundaries together." data-tr="Sınırları birlikte zorlayan geliştiriciler, yaratıcılar ve teknoloji tutkunlarından oluşan canlı bir topluluğa katılın.">Join a vibrant community of developers, creators, and tech enthusiasts pushing boundaries together.</p>
+            <a href="https://gdg.community.dev/gdg-adana/" target="_blank" class="cta-button translate" data-en="Join Our Community" data-tr="Topluluğumuza Katıl" style="background: #fff; color: var(--google-blue);">Join Our Community</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h3 class="translate" data-en="Welcome to Our Community" data-tr="Topluluğumuza Hoş Geldiniz">Welcome to Our Community</h3>
+                <p class="translate" data-en="We are a passionate group of developers, designers, and tech enthusiasts united by our love for technology and innovation." data-tr="Teknoloji ve yeniliğe olan sevgimizle birleşmiş, tutkulu bir geliştirici, tasarımcı ve teknoloji meraklısı grubuyuz.">We are a passionate group of developers, designers, and tech enthusiasts united by our love for technology and innovation.</p>
+                <p class="translate" data-en="Through workshops, hackathons, and networking events, we empower our members to build amazing projects." data-tr="Atölyeler, hackathonlar ve ağ oluşturma etkinlikleri aracılığıyla, üyelerimizi harika projeler oluşturmaları için güçlendiriyoruz.">Through workshops, hackathons, and networking events, we empower our members to build amazing projects.</p>
+            </div>
+            <div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label translate" data-en="Events" data-tr="Etkinlik">Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label translate" data-en="Speakers" data-tr="Konuşmacı">Speakers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label translate" data-en="Partners" data-tr="Ortak">Partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title translate" data-en="Upcoming Events" data-tr="Yaklaşan Etkinlikler">Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <a style="text-decoration: none; color: inherit;" href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank">
+                    <div class="event-image">
+                        <img src="images/event.png" alt="devfest2025">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date translate" data-en="November 29, 2025" data-tr="29 Kasım 2025">November 29, 2025</div>
+                        <h3 class="event-title">DevFest 2025</h3>
+                        <p class="event-desc translate" data-en="Our biggest annual event featuring cutting-edge tech talks, tons of fun, and networking opportunities." data-tr="En büyük yıllık eventimiz, teknoloji odaklı konuşmalar, doyasıya eğlence ve network fırsatları sunuyor.">Our biggest annual event featuring cutting-edge tech talks, tons of fun, and networking opportunities.</p>
+                        <span class="event-button translate" data-en="Join Event" data-tr="Etkinliğe Katıl">Join Event</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2 class="section-title translate" data-en="Join Us" data-tr="Bize Katılın">Join Us</h2>
+        <p style="text-align: center; font-size: clamp(16px, 3.5vw, 20px); color: var(--text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;" class="translate" data-en="Want to share your knowledge or support the growth of our community? We'd love to have you!" data-tr="Bilginizi paylaşmak veya topluluğumuzun büyümesini desteklemek mi istiyorsunuz? Sizi aramızda görmek isteriz!">Want to share your knowledge or support the growth of our community? We'd love to have you!</p>
+        <div class="join-grid">
+            <div class="join-card" data-color="blue">
+                <div class="join-icon-wrapper">
+                    <div class="join-icon">
+                        <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18V14M6 14H8L13 17V7L8 10H5C3.89543 10 3 10.8954 3 12V12C3 13.1046 3.89543 14 5 14H6ZM17 7L19 5M17 17L19 19M19 12H21" stroke="#0061ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="translate" data-en="Become a Speaker" data-tr="Konuşmacı Olun">Become a Speaker</h3>
+                <p class="translate" data-en="Share your expertise and inspire hundreds of people by presenting at our events." data-tr="Uzmanlık alanınızda bir sunum yaparak yüzlerce kişiye ilham verin.">Share your expertise and inspire hundreds of people by presenting at our events.</p>
+                <a href="#" id="jb-blue" class="join-button translate" data-en="Apply Now" data-tr="Başvuru Yap">Apply Now</a>
+            </div>
+            <div class="join-card" data-color="red">
+                <div class="join-icon-wrapper">
+                    <div class="join-icon">
+    <svg height="100px" width="100px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <g>
+                <path fill="#ff4013" d="M326.527,171.735c-15.637-2.602-55.941-2.43-82.686,7.296c-26.752,9.725-75.397,40.124-89.988,44.997 c-14.591,4.859-15.81,24.322,17.02,27.964c32.836,3.654,62.018-17.028,69.313-20.669c7.296-3.654,77.826,7.296,77.826,7.296 l22.19,5.468l51.161,69.154c8.977-7.798,26.732-24.349,31.228-36.927c1.641-4.581,4.078-8.792,6.752-12.532l-72.49-99.977 C347.605,169.047,336.444,173.39,326.527,171.735z"></path>
+                <path fill="#ff4013" d="M326.527,254.123l-10.752-1.085c-14.107-2.185-54-7.865-68.975-7.865c-0.662,0-1.185,0.007-1.576,0.026 c-0.602,0.344-1.298,0.742-1.98,1.139c-10.625,6.19-35.524,20.681-64.52,20.681c-3.178,0-6.362-0.179-9.46-0.523 c-4.7-0.523-8.832-1.331-12.486-2.35c3.462,1.516,6.653,3.688,9.381,6.475c4.29,4.383,6.944,9.758,7.997,15.379 c2.496-0.669,5.084-1.04,7.732-1.04c8.116,0,15.71,3.191,21.376,8.99c5.588,5.707,8.613,13.254,8.527,21.238 c0,0.079-0.013,0.159-0.013,0.238c8.083,0.026,15.644,3.218,21.297,8.99c5.587,5.707,8.613,13.253,8.527,21.238 c-0.027,2.754-0.45,5.441-1.198,8.024c5.733,1.198,10.983,4.051,15.18,8.341c11.532,11.791,11.327,30.757-0.457,42.29l-5.898,5.773 c0.026,0,0.053,0,0.079,0c9.917-0.715,18.265-6.832,20.602-16.048c4.038,3.184,9.122,5.097,14.664,5.097 c13.095,0,23.713-10.612,23.713-23.713c0-1.377-0.139-2.714-0.371-4.026c4.171,3.635,9.606,5.852,15.571,5.852 c13.095,0,23.714-10.619,23.714-23.713c2.807,1.172,5.885,1.827,9.116,1.827c13.101,0,23.713-10.619,23.713-23.713 c0-9.944-4.859-16.418-16.418-29.791L326.527,254.123z"></path>
+                <path fill="#ff4013" d="M155.734,280.829c-5.918-6.044-15.61-6.15-21.654-0.238l-21.88,21.416c-6.044,5.912-6.15,15.604-0.238,21.648 c5.918,6.044,15.61,6.15,21.654,0.231l21.886-21.41C161.539,296.565,161.645,286.873,155.734,280.829z"></path>
+                <path fill="#ff4013" d="M192.833,304.158c-5.912-6.051-15.604-6.157-21.648-0.239l-29.175,28.546 c-6.051,5.918-6.15,15.61-0.239,21.648c5.912,6.051,15.611,6.157,21.655,0.239l29.175-28.547 C198.645,319.894,198.751,310.202,192.833,304.158z"></path>
+                <path fill="#ff4013" d="M222.643,334.624c-5.912-6.044-15.604-6.157-21.648-0.238l-29.175,28.553 c-6.044,5.911-6.15,15.603-0.238,21.654c5.912,6.038,15.604,6.144,21.655,0.225l29.175-28.546 C228.456,350.353,228.562,340.661,222.643,334.624z"></path>
+                <path fill="#ff4013" d="M245.158,372.226c-5.912-6.044-15.604-6.156-21.648-0.238l-17.02,16.657 c-6.044,5.911-6.15,15.603-0.238,21.648c5.918,6.044,15.61,6.144,21.654,0.238l17.02-16.656 C250.971,387.963,251.07,378.271,245.158,372.226z"></path>
+                <path fill="#ff4013" d="M510.606,234.991l-97.792-134.866c-2.364-3.27-6.925-3.991-10.189-1.628l-43.315,31.412 c-3.264,2.363-3.992,6.925-1.622,10.188L455.48,274.97c2.363,3.264,6.925,3.992,10.188,1.622l43.323-31.406 C512.248,242.815,512.977,238.254,510.606,234.991z M477.334,247.106c-5.435,3.945-13.042,2.727-16.987-2.708 c-3.939-5.435-2.728-13.035,2.714-16.98c5.435-3.946,13.035-2.728,16.981,2.701C483.98,235.56,482.769,243.167,477.334,247.106z"></path>
+                <path fill="#ff4013" d="M144.784,261.63c2.304,0,4.555,0.292,6.739,0.788c-18.384-7.05-21.429-19.946-21.906-24.494 c-1.298-12.248,6.587-23.402,19.622-27.745c5.243-1.748,18.986-9.242,32.28-16.484c14.26-7.779,29.91-16.312,43.521-22.589 c-17.252-1.396-33.419-0.807-42.051,0.629c-9.295,1.549-19.675-2.164-28.553-6.944l-73.06,100.752 c2.191,3.29,4.157,6.892,5.54,10.771c2.046,5.72,6.839,12.26,12.3,18.43c0.854-1.099,1.761-2.172,2.781-3.171l21.879-21.416 C129.498,264.662,136.926,261.63,144.784,261.63z"></path>
+                <path fill="#ff4013" d="M152.695,129.902l-43.323-31.406c-3.257-2.363-7.818-1.642-10.188,1.628L1.391,234.991 c-2.37,3.263-1.635,7.824,1.622,10.195l43.316,31.406c3.264,2.37,7.825,1.642,10.189-1.629l97.793-134.866 C156.68,136.834,155.952,132.272,152.695,129.902z M123.745,144.97c-3.939,5.428-11.546,6.646-16.981,2.701 c-5.442-3.94-6.654-11.546-2.708-16.981c3.939-5.435,11.546-6.653,16.981-2.708C126.479,131.928,127.684,139.528,123.745,144.97z"></path>
+            </g>
+        </g>
+    </svg>
+</div>
+                </div>
+                <h3 class="translate" data-en="Become a Sponsor" data-tr="Sponsor Olun">Become a Sponsor</h3>
+                <p class="translate" data-en="Meet Adana's brightest tech talent and contribute to the ecosystem with your brand." data-tr="Markanızı Adana'nın en parlak teknoloji yetenekleriyle buluşturun.">Meet Adana's brightest tech talent and contribute to the ecosystem with your brand.</p>
+                <a href="#" id="jb-red" class="join-button translate" data-en="View Details" data-tr="Detayları Gör">View Details</a>
+            </div>
+            <!-- // Become a volunteer section
+            <div class="join-card" data-color="green">
+                <div class="join-icon-wrapper">
+                    <div class="join-icon">
+                        <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="8" r="3" stroke="#00f900" stroke-width="2" stroke-linecap="round"></circle> <path d="M15.2679 8C15.5332 7.54063 15.97 7.20543 16.4824 7.06815C16.9947 6.93086 17.5406 7.00273 18 7.26795C18.4594 7.53317 18.7946 7.97 18.9319 8.48236C19.0691 8.99472 18.9973 9.54063 18.7321 10C18.4668 10.4594 18.03 10.7946 17.5176 10.9319C17.0053 11.0691 16.4594 10.9973 16 10.7321C15.5406 10.4668 15.2054 10.03 15.0681 9.51764C14.9309 9.00528 15.0027 8.45937 15.2679 8L15.2679 8Z" stroke="#00f900" stroke-width="2"></path> <path d="M5.26795 8C5.53317 7.54063 5.97 7.20543 6.48236 7.06815C6.99472 6.93086 7.54063 7.00273 8 7.26795C8.45937 7.53317 8.79457 7.97 8.93185 8.48236C9.06914 8.99472 8.99727 9.54063 8.73205 10C8.46683 10.4594 8.03 10.7946 7.51764 10.9319C7.00528 11.0691 6.45937 10.9973 6 10.7321C5.54063 10.4668 5.20543 10.03 5.06815 9.51764C4.93086 9.00528 5.00273 8.45937 5.26795 8L5.26795 8Z" stroke="#00f900" stroke-width="2"></path> <path d="M16.8816 18L15.9013 18.1974L16.0629 19H16.8816V18ZM20.7202 16.9042L21.6627 16.5699L20.7202 16.9042ZM14.7808 14.7105L14.176 13.9142L13.0194 14.7927L14.2527 15.5597L14.7808 14.7105ZM19.8672 17H16.8816V19H19.8672V17ZM19.7777 17.2384C19.7707 17.2186 19.7642 17.181 19.7725 17.1354C19.7804 17.0921 19.7982 17.0593 19.8151 17.0383C19.8474 16.9982 19.874 17 19.8672 17V19C21.0132 19 22.1414 17.9194 21.6627 16.5699L19.7777 17.2384ZM17 15C18.6416 15 19.4027 16.1811 19.7777 17.2384L21.6627 16.5699C21.1976 15.2588 19.9485 13 17 13V15ZM15.3857 15.5069C15.7702 15.2148 16.282 15 17 15V13C15.8381 13 14.9028 13.3622 14.176 13.9142L15.3857 15.5069ZM14.2527 15.5597C15.2918 16.206 15.7271 17.3324 15.9013 18.1974L17.8619 17.8026C17.644 16.7204 17.0374 14.9364 15.309 13.8614L14.2527 15.5597Z" fill="#00f900"></path> <path d="M9.21918 14.7105L9.7473 15.5597L10.9806 14.7927L9.82403 13.9142L9.21918 14.7105ZM3.2798 16.9041L4.22227 17.2384L4.22227 17.2384L3.2798 16.9041ZM7.11835 18V19H7.93703L8.09867 18.1974L7.11835 18ZM7.00001 15C7.71803 15 8.22986 15.2148 8.61433 15.5069L9.82403 13.9142C9.09723 13.3621 8.1619 13 7.00001 13V15ZM4.22227 17.2384C4.59732 16.1811 5.35842 15 7.00001 15V13C4.0515 13 2.80238 15.2587 2.33733 16.5699L4.22227 17.2384ZM4.13278 17C4.126 17 4.15264 16.9982 4.18486 17.0383C4.20176 17.0593 4.21961 17.0921 4.22748 17.1354C4.2358 17.181 4.22931 17.2186 4.22227 17.2384L2.33733 16.5699C1.85864 17.9194 2.98677 19 4.13278 19V17ZM7.11835 17H4.13278V19H7.11835V17ZM8.09867 18.1974C8.27289 17.3324 8.70814 16.206 9.7473 15.5597L8.69106 13.8614C6.96257 14.9363 6.356 16.7203 6.13804 17.8026L8.09867 18.1974Z" fill="#00f900"></path> <path d="M12 14C15.5715 14 16.5919 16.5512 16.8834 18.0089C16.9917 18.5504 16.5523 19 16 19H8C7.44772 19 7.00829 18.5504 7.11659 18.0089C7.4081 16.5512 8.42846 14 12 14Z" stroke="#00f900" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                            <circle cx="12" cy="8" r="3" stroke="#00f900" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 14C15.5715 14 16.5919 16.5512 16.8834 18.0089C16.9917 18.5504 16.5523 19 16 19H8C7.44772 19 7.00829 18.5504 7.11659 18.0089C7.4081 16.5512 8.42846 14 12 14Z" stroke="#00f900" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="translate" data-en="Become a Volunteer" data-tr="Gönüllü Olun">Become a Volunteer</h3>
+                <p class="translate" data-en="Be part of our community, gain new skills, and get to know technology enthusiasts." data-tr="Topluluğumuzun bir parçası olun, yeni beceriler kazanın ve teknoloji tutkunlarıyla tanışın.">Be part of our community, gain new skills, and get to know technology enthusiasts.</p>
+                <a href="#" class="join-button translate" data-en="Volunteer Application" data-tr="Gönüllü Başvurusu">Volunteer Application</a>
+            </div>
+        -->
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title translate" data-en="Meet Our Core Team" data-tr="Çekirdek Ekibimizle Tanışın">Meet Our Core Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/Batuhan.png" alt="Ahmet Batuhan Yılmaz">
+                </div>
+                <div class="member-name">Ahmet Batuhan Yılmaz</div>
+                <div class="member-role translate" data-en="Organizer" data-tr="Organizatör">Organizer</div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/Samet.png" alt="Samet Aydın">
+                </div>
+                <div class="member-name">Samet Aydın</div>
+                <div class="member-role translate" data-en="Organizer" data-tr="Organizatör">Organizer</div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/Yucel.png" alt="Muhammed Yücel Diler">
+                </div>
+                <div class="member-name">Muhammed Yücel Diler</div>
+                <div class="member-role translate" data-en="Organizer" data-tr="Organizatör">Organizer</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2 class="section-title translate" data-en="Frequently Asked Questions" data-tr="Sıkça Sorulan Sorular">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span class="translate" data-en="Are your events free to attend?" data-tr="Etkinlikleriniz katılmak için ücretsiz mi?">Are your events free to attend?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer translate" data-en="Yes! All our events are completely free and open to everyone." data-tr="Evet! Tüm etkinliklerimiz tamamen ücretsizdir ve herkese açıktır.">Yes! All our events are completely free and open to everyone.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span class="translate" data-en="Do I need to be an expert to join?" data-tr="Katılmak için uzman olmam gerekli mi?">Do I need to be an expert to join?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer translate" data-en="Not at all! We welcome members of all skill levels." data-tr="Hiç de değil! Her beceri seviyesinden üyeleri memnuniyetle karşılıyoruz.">Not at all! We welcome members of all skill levels.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span class="translate" data-en="How can I become a speaker?" data-tr="Nasıl konuşmacı olabilirim?">How can I become a speaker?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer translate" data-en="Simply fill out our speaker application form on our community platform." data-tr="Topluluk platformumuzda konuşmacı başvuru formumuzu doldurmanız yeterli.">Simply fill out our speaker application form on our community platform.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span class="translate" data-en="Can I volunteer or contribute?" data-tr="Gönüllü olabilir veya katkıda bulunabilir miyim?">Can I volunteer or contribute?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer translate" data-en="Absolutely! Join our volunteer program and become part of our community." data-tr="Kesinlikle! Gönüllü programımıza katılın ve topluluğumuzun bir parçası olun.">Absolutely! Join our volunteer program and become part of our community.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <h2 class="translate" data-en="Ready to Join Us?" data-tr="Bize Katılmaya Hazır mısınız?">Ready to Join Us?</h2>
+        <p class="translate" data-en="Connect with thousands of developers and start your journey today" data-tr="Binlerce geliştiriciye bağlanın ve yolculuğunuza bugün başlayın">Connect with thousands of developers and start your journey today</p>
+        <a href="https://gdg.community.dev/gdg-adana/" target="_blank" class="cta-button translate" data-en="Join Our Community" data-tr="Topluluğumuza Katıl" style="background: #fff; color: var(--google-blue);">Join Our Community</a>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/gdg_adana/" target="_blank"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#eb34d8"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#eb34d8"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#eb34d8"></path> </g></svg></a>
+            <a href="https://x.com/gdg_adana" target="_blank"><?xml version="1.0"?><svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><g><path d="M21.159809,2C21.623091,2,22,2.376909,22,2.840191v18.319618C22,21.623091,21.623091,22,21.159809,22H2.84019   C2.37691,22,2,21.623091,2,21.159809V2.840191C2,2.376909,2.37691,2,2.84019,2H21.159809 M21.159809,1H2.84019   C1.82388,1,1,1.823879,1,2.840191v18.319618C1,22.176121,1.82388,23,2.84019,23h18.319618C22.176121,23,23,22.176121,23,21.159809   V2.840191C23,1.823879,22.176121,1,21.159809,1L21.159809,1z"/></g><path d="M13.523985,10.775623L19.480984,4h-1.41143l-5.174801,5.88195L8.764665,4H4l6.246901,8.895341L4,20h1.411431  l5.461361-6.21299L15.235336,20H20L13.523985,10.775623z M11.590199,12.973429l-0.633908-0.886331L5.920428,5.041171h2.168246  l4.065295,5.6884l0.631236,0.886331l5.283681,7.39365H15.90064L11.590199,12.973429z"/></svg></a>
+            <a href="https://tr.linkedin.com/company/gdg-adana" target="_blank"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0056d6"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0056d6"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0056d6"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0056d6"></path> </g></svg></a>
+        </div>
+        <p class="translate" data-en="© 2025 GDG Community. All rights reserved." data-tr="© 2025 GDG Topluluğu. Tüm hakları saklıdır." style="color: white;">&copy; 2025 GDG Community. All rights reserved.</p>
+        <p>
+            <span class="translate" data-en="Made with" data-tr="Topluluğumuz tarafından">Made with</span>
+            <?xml version="1.0"?><svg id="Capa_1" style="enable-background:new 0 0 150 150; width: 30px; padding-bottom: -10px;" version="1.1" viewBox="0 0 150 120" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:#1A73E8;}
+	.st1{fill:#EA4335;}
+	.st2{fill:#4285F4;}
+	.st3{fill:#FBBC04;}
+	.st4{fill:#34A853;}
+	.st5{fill:#4CAF50;}
+	.st6{fill:#1E88E5;}
+	.st7{fill:#E53935;}
+	.st8{fill:#C62828;}
+	.st9{fill:#FBC02D;}
+	.st10{fill:#1565C0;}
+	.st11{fill:#2E7D32;}
+	.st12{fill:#F6B704;}
+	.st13{fill:#E54335;}
+	.st14{fill:#4280EF;}
+	.st15{fill:#34A353;}
+	.st16{clip-path:url(#SVGID_2_);}
+	.st17{fill:#188038;}
+	.st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+	.st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+	.st20{clip-path:url(#SVGID_4_);}
+	.st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+	.st22{clip-path:url(#SVGID_6_);}
+	.st23{fill:#FA7B17;}
+	.st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+	.st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+	.st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+	.st27{fill:url(#Finish_mask_1_);}
+	.st28{fill:#FFFFFF;}
+	.st29{fill:#0C9D58;}
+	.st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+	.st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+	.st32{fill:#FFC107;}
+	.st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+	.st34{opacity:0.2;}
+	.st35{fill:#1A237E;}
+	.st36{fill:url(#SVGID_7_);}
+	.st37{fill:#FBBC05;}
+	.st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+	.st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+	.st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+	.st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+</style><g><path class="st7" d="M33.8,77.5l5.1,5.1L50,71.6l-5.1-5.1l0,0l-2.3-2.3c-1.9-1.9-2.8-4.3-2.8-6.9c0-2.3,0.8-4.4,2.1-6l0,0l0,0l0,0   l0,0c1.8-2.3,4.6-3.8,7.7-3.8c2.6,0,5.1,1,7,2.9l2.3,2.2l5.1,5.2L75,46.7l-5.2-5.1l-2.3-2.2c-4.6-4.6-11-7.5-18-7.5   C35.4,31.8,24,43.2,24,57.3c0,3.5,0.7,6.8,2,9.9c1.3,3.1,3.2,5.8,5.5,8.1L33.8,77.5"/><polyline class="st3" points="59.2,84.6 75,68.8 63.9,57.7 50,71.6 50,71.6 38.9,82.6 44.9,88.6 50,93.7 55.3,88.4  "/><polygon class="st4" points="86.1,107.6 111.1,82.6 100,71.6 75,96.5 61.1,82.7 50,93.7 63.9,107.6 63.9,107.7 75,118.2 75,118.2    75,118.2 86.1,107.6 86.1,107.6  "/><path class="st2" d="M118.5,75.2c5.2-5.2,8.2-13.1,7.3-21.2c-1.2-12.2-11.3-21.3-23.6-22.2c-7.7-0.5-14.8,2.4-19.8,7.4L63.9,57.7   L75,68.8l18.6-18.5c2.2-2.2,5.4-3.2,8.5-2.7c4.1,0.6,7.5,4.1,8.1,8.2c0.4,3.1-0.6,6.1-2.8,8.3l-7.4,7.4l11.1,11.1L118.5,75.2z"/></g></svg>
+            <span class="translate" data-en="by our community" data-tr="ile yapıldı">by our community</span>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
