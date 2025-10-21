@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFest Adana 2025 - 29 Kasım</title>
+    <link rel="stylesheet" href="css/devfestStyle.css">
+</head>
+<body>
+    <svg class="doodle-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800">
+        <defs>
+            <pattern id="doodle-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                <circle cx="50" cy="50" r="3" fill="currentColor"/>
+                <circle cx="150" cy="50" r="3" fill="currentColor"/>
+                <circle cx="50" cy="150" r="3" fill="currentColor"/>
+                <circle cx="150" cy="150" r="3" fill="currentColor"/>
+                <path d="M100,20 Q120,40 100,60" stroke="currentColor" fill="none" stroke-width="2"/>
+                <path d="M20,100 L60,100" stroke="currentColor" stroke-width="2"/>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#doodle-pattern)"/>
+    </svg>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <span class="logo-text">DevFest</span> <span>Adana 2025</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#speakers">Konuşmacılar</a></li>
+                <li><a href="#schedule">Program</a></li>
+                <li><a href="#prizes">Hediyeler</a></li>
+                <li><a href="#sponsors">Sponsorlar</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <img id="theme" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E" alt="tema">
+            </button>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mobile-link">Hakkında</a></li>
+            <li><a href="#speakers" class="mobile-link">Konuşmacılar</a></li>
+            <li><a href="#schedule" class="mobile-link">Program</a></li>
+            <li><a href="#prizes" class="mobile-link">Hediyeler</a></li>
+            <li><a href="#sponsors" class="mobile-link">Sponsorlar</a></li>
+        </ul>
+        <button class="mobile-theme-toggle" id="mobileThemeToggle">
+            <img id="mobileTheme" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E" alt="tema">
+            <span>Tema Değiştir</span>
+        </button>
+    </div>
+
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
+        <div class="hero-content">
+            <h1>DevFest Adana 2025</h1>
+            <div class="date-badge">📅 29 Kasım 2025</div>
+            <p>Adana'nın en büyük teknoloji festivali! Öğrenme, networking ve eğlence dolu bir gün için bize katılın.</p>
+            <a href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank" class="cta-button">Hemen Kayıt Ol</a>
+            <a href="#about" class="cta-button secondary">Daha Fazla Bilgi</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">DevFest Nedir?</h2>
+        <div class="about-devfest">
+            <p>DevFest, Google Developer Groups (GDG) tarafından dünya çapında düzenlenen yıllık topluluk etkinliğidir. Her yıl dünyanın dört bir yanında binlerce geliştirici, tasarımcı ve teknoloji meraklısı bir araya gelir.</p>
+            <p>DevFest Adana 2025'te en son teknolojiler hakkında konuşmalar, atölye çalışmaları ve networking fırsatları sizi bekliyor. Yapay zeka, bulut teknolojileri, mobil geliştirme ve daha fazlası hakkında sektörün önde gelen isimlerinden öğrenin!</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Katılımcı</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Konuşmacı</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Oturum</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Saat</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers">
+        <h2 class="section-title">Konuşmacılarımız</h2>
+        <div class="speakers-grid">
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+            <div class="speaker-card">
+                <div class="speaker-photo">👤</div>
+                <div class="speaker-name">Konuşmacı İsmi</div>
+                <div class="speaker-title">Pozisyon • Şirket</div>
+                <div class="speaker-bio">Konu başlığı ve kısa açıklama buraya gelecek</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2 class="section-title">Etkinlik Programı</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <div class="schedule-time">09:00</div>
+                <div class="schedule-content">
+                    <h3>Kayıt & Kahvaltı</h3>
+                    <p>Katılımcı kayıtları ve hoş geldin kahvaltısı</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">10:00</div>
+                <div class="schedule-content">
+                    <h3>Açılış Konuşması</h3>
+                    <p>DevFest Adana 2025'e hoş geldiniz!</p>
+                    <p class="schedule-speaker">🎤 Organizasyon Ekibi</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">10:30</div>
+                <div class="schedule-content">
+                    <h3>Keynote Konuşması</h3>
+                    <p>Teknolojinin geleceği ve trendler</p>
+                    <p class="schedule-speaker">🎤 Konuşmacı İsmi</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">11:30</div>
+                <div class="schedule-content">
+                    <h3>Teknik Oturum 1</h3>
+                    <p>Paralel oturumlar - 3 farklı salon</p>
+                    <p class="schedule-speaker">🎤 Çeşitli Konuşmacılar</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">12:30</div>
+                <div class="schedule-content">
+                    <h3>Öğle Yemeği Molası</h3>
+                    <p>Networking ve yemek</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">14:00</div>
+                <div class="schedule-content">
+                    <h3>Teknik Oturum 2</h3>
+                    <p>Paralel oturumlar - 3 farklı salon</p>
+                    <p class="schedule-speaker">🎤 Çeşitli Konuşmacılar</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">15:30</div>
+                <div class="schedule-content">
+                    <h3>Workshop & Atölye Çalışmaları</h3>
+                    <p>Uygulamalı eğitim oturumları</p>
+                </div>
+            </div>
+            <div class="schedule-item">
+                <div class="schedule-time">17:00</div>
+                <div class="schedule-content">
+                    <h3>Kapanış & Çekilişler</h3>
+                    <p>Etkinlik kapanışı ve hediye çekilişleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prizes">
+        <h2 class="section-title">Hediyeler & Ödüller</h2>
+        <p style="text-align: center; font-size: clamp(17px, 3.8vw, 22px); color: var(--text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 600;">
+            Tüm katılımcılarımız için harika hediyeler hazırladık! İşte etkinliğimizde kazanabileceğiniz bazı ödüller:
+        </p>
+        <div class="prizes-grid">
+            <div class="prize-card">
+                <div class="prize-icon">🎁</div>
+                <div class="prize-title">Katılımcı Kiti</div>
+                <div class="prize-desc">Tüm katılımcılara özel DevFest hediye paketi: t-shirt, sticker seti, not defteri ve daha fazlası!</div>
+            </div>
+            <div class="prize-card">
+                <div class="prize-icon">🏆</div>
+                <div class="prize-title">Büyük Ödüller</div>
+                <div class="prize-desc">Çekilişle kazanılacak özel ödüller: teknoloji ürünleri, kurslar ve sürpriz hediyeler.</div>
+            </div>
+            <div class="prize-card">
+                <div class="prize-icon">🎯</div>
+                <div class="prize-title">Workshop Sertifikaları</div>
+                <div class="prize-desc">Atölye çalışmalarına katılan tüm katılımcılara dijital katılım sertifikası verilecektir.</div>
+            </div>
+            <div class="prize-card">
+                <div class="prize-icon">🌟</div>
+                <div class="prize-title">Sponsor Hediyeleri</div>
+                <div class="prize-desc">Sponsorlarımızdan özel hediyeler, indirim kuponları ve kariyer fırsatları.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="cta-section">
+        <h2>Yerinizi Ayırtın!</h2>
+        <p>DevFest Adana 2025'te yerinizi şimdiden garantileyin. Kontenjan sınırlıdır!</p>
+        <a href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank" class="cta-button">
+            Ücretsiz Kayıt Ol
+        </a>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/gdg_adana/" target="_blank">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#eb34d8"></path>
+                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#eb34d8"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#eb34d8"></path>
+                </svg>
+            </a>
+            <a href="https://x.com/gdg_adana" target="_blank">
+                <svg style="fill: #1DA1F2;" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                    <path d="M13.523985,10.775623L19.480984,4h-1.41143l-5.174801,5.88195L8.764665,4H4l6.246901,8.895341L4,20h1.411431l5.461361-6.21299L15.235336,20H20L13.523985,10.775623z M11.590199,12.973429l-0.633908-0.886331L5.920428,5.041171h2.168246l4.065295,5.6884l0.631236,0.886331l5.283681,7.39365H15.90064L11.590199,12.973429z"/>
+                </svg>
+            </a>
+            <a href="https://tr.linkedin.com/company/gdg-adana" target="_blank">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0056d6"></path>
+                    <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0056d6"></path>
+                    <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0056d6"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0056d6"></path>
+                </svg>
+            </a>
+        </div>
+        <p>&copy; 2025 GDG Adana. Tüm hakları saklıdır.</p>
+        <p>
+            <span>Sevgiyle yapıldı </span>
+            <span style="display: inline-block; font-size: 24px;">❤️</span>
+            <span> GDG Adana Topluluğu tarafından</span>
+        </p>
+    </footer>
+
+    <script src="js/devfestScript.js"></script>
+</body>
+</html>
