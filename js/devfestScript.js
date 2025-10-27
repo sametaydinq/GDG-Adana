@@ -27,6 +27,7 @@ function toggleTheme() {
     const body = document.body;
     const theme = document.getElementById('theme');
     const mobileTheme = document.getElementById('mobileTheme');
+    const devfestLogo = document.querySelector('.devfest-logo');
     const lightIcon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cpath d='M12 1v2m0 18v2M4.2 4.2l1.4 1.4m12.8 12.8l1.4 1.4M1 12h2m18 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E";
     const darkIcon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E";
     
@@ -34,11 +35,13 @@ function toggleTheme() {
         body.classList.add('dark-mode');
         theme.setAttribute("src", lightIcon);
         mobileTheme.setAttribute("src", lightIcon);
+        devfestLogo.setAttribute("src", "images/Devfest Logo Dark.png");
         currentTheme = 'dark';
     } else {
         body.classList.remove('dark-mode');
         theme.setAttribute("src", darkIcon);
         mobileTheme.setAttribute("src", darkIcon);
+        devfestLogo.setAttribute("src", "images/Devfest Logo.png");
         currentTheme = 'light';
     }
 }
@@ -58,3 +61,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Initialize logo based on current theme
+function initializeLogo() {
+    const devfestLogo = document.querySelector('.devfest-logo');
+    const body = document.body;
+    
+    if (body.classList.contains('dark-mode')) {
+        devfestLogo.setAttribute("src", "images/Devfest Logo Dark.png");
+    } else {
+        devfestLogo.setAttribute("src", "images/Devfest Logo.png");
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', initializeLogo);

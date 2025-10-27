@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="css/devfestStyle.css">
 </head>
 <body>
-    <svg class="doodle-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800">
-        <defs>
-            <pattern id="doodle-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                <circle cx="150" cy="50" r="3" fill="currentColor"/>
-                <circle cx="50" cy="150" r="3" fill="currentColor"/>
-                <circle cx="150" cy="150" r="3" fill="currentColor"/>
-                <path d="M100,20 Q120,40 100,60" stroke="currentColor" fill="none" stroke-width="2"/>
-                <path d="M20,100 L60,100" stroke="currentColor" stroke-width="2"/>
-            </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#doodle-pattern)"/>
-    </svg>
+
 
     <nav class="navbar">
         <div class="nav-left">
@@ -32,7 +20,6 @@
                 <li><a href="#about">Hakkında</a></li>
                 <li><a href="#speakers">Konuşmacılar</a></li>
                 <li><a href="#schedule">Program</a></li>
-                <li><a href="#prizes">Hediyeler</a></li>
                 <li><a href="#sponsors">Sponsorlar</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle">
@@ -51,7 +38,6 @@
             <li><a href="#about" class="mobile-link">Hakkında</a></li>
             <li><a href="#speakers" class="mobile-link">Konuşmacılar</a></li>
             <li><a href="#schedule" class="mobile-link">Program</a></li>
-            <li><a href="#prizes" class="mobile-link">Hediyeler</a></li>
             <li><a href="#sponsors" class="mobile-link">Sponsorlar</a></li>
         </ul>
         <button class="mobile-theme-toggle" id="mobileThemeToggle">
@@ -68,35 +54,49 @@
             <div class="shape shape4"></div>
         </div>
         <div class="hero-content">
-            <h1>DevFest Adana 2025</h1>
-            <div class="date-badge">📅 29 Kasım 2025</div>
+            <img src="images/Devfest Logo.png" alt="Devfest Logo" class="devfest-logo" style="display: block;">
+            <div class="date-badge"><svg id="time-svg" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 45.222 45.222" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M22.611,0C10.143,0,0,10.143,0,22.611c0,12.467,10.143,22.61,22.611,22.61c12.467,0,22.611-10.144,22.611-22.61 C45.222,10.143,35.078,0,22.611,0z M22.611,38.244c-8.62,0-15.633-7.014-15.633-15.633c0-8.621,7.013-15.633,15.633-15.633 c8.62,0,15.633,7.013,15.633,15.633C38.244,31.23,31.23,38.244,22.611,38.244z"></path> <path d="M26.035,19.12v-2.989c0-1.927-1.58-3.489-3.507-3.489c-1.927,0-3.507,1.562-3.507,3.489v6.479 c0,1.928,1.585,3.459,3.512,3.459h9.47c1.927,0,3.489-1.547,3.489-3.475c0-1.927-1.562-3.474-3.489-3.474H26.035L26.035,19.12z"></path> </g> </g> </g></svg>29 Kasım 2025</div>
+            <br>
+            <div class="date-badge"><svg id="date-svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="3" y="6" width="18" height="15" rx="2" stroke="#000000"></rect> <path d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z" fill="#000000"></path> <path d="M7 3L7 6" stroke="#000000" stroke-linecap="round"></path> <path d="M17 3L17 6" stroke="#000000" stroke-linecap="round"></path> <rect x="7" y="12" width="4" height="2" rx="0.5" fill="#000000"></rect> <rect x="7" y="16" width="4" height="2" rx="0.5" fill="#000000"></rect> <rect x="13" y="12" width="4" height="2" rx="0.5" fill="#000000"></rect> <rect x="13" y="16" width="4" height="2" rx="0.5" fill="#000000"></rect> </g></svg>Çukurova Teknokent</div>
             <p>Adana'nın en büyük teknoloji festivali! Öğrenme, networking ve eğlence dolu bir gün için bize katılın.</p>
-            <a href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank" class="cta-button">Hemen Kayıt Ol</a>
-            <a href="#about" class="cta-button secondary">Daha Fazla Bilgi</a>
+            <a href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank" style="text-decoration: none;">
+                <button type="button" class="btn">
+                    <strong>KAYIT OL</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+            </a>
         </div>
     </section>
 
     <section id="about">
         <h2 class="section-title">DevFest Nedir?</h2>
         <div class="about-devfest">
-            <p>DevFest, Google Developer Groups (GDG) tarafından dünya çapında düzenlenen yıllık topluluk etkinliğidir. Her yıl dünyanın dört bir yanında binlerce geliştirici, tasarımcı ve teknoloji meraklısı bir araya gelir.</p>
-            <p>DevFest Adana 2025'te en son teknolojiler hakkında konuşmalar, atölye çalışmaları ve networking fırsatları sizi bekliyor. Yapay zeka, bulut teknolojileri, mobil geliştirme ve daha fazlası hakkında sektörün önde gelen isimlerinden öğrenin!</p>
+            <p class="desktop-text">DevFest, Google Developer Groups (GDG) tarafından dünya çapında düzenlenen yıllık topluluk etkinliğidir. Her yıl dünyanın dört bir yanında binlerce geliştirici, tasarımcı ve teknoloji meraklısı bir araya gelir.</p>
+            <p class="desktop-text">DevFest Adana 2025'te en son teknolojiler hakkında konuşmalar, atölye çalışmaları ve networking fırsatları sizi bekliyor. Yapay zeka, bulut teknolojileri, mobil geliştirme ve daha fazlası hakkında sektörün önde gelen isimlerinden öğrenin!</p>
+            
+            <p class="mobile-text">DevFest, Google Developer Groups (GDG) tarafından düzenlenen yıllık teknoloji etkinliğidir. Adana 2025'te en son teknolojiler, atölye çalışmaları ve networking fırsatları sizi bekliyor!</p>
         </div>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">500+</div>
+                <div class="stat-number-blue">500+</div>
                 <div class="stat-label">Katılımcı</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">20+</div>
+                <div class="stat-number-red">20+</div>
                 <div class="stat-label">Konuşmacı</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">15+</div>
+                <div class="stat-number-yellow">15+</div>
                 <div class="stat-label">Oturum</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">8+</div>
+                <div class="stat-number-green">8+</div>
                 <div class="stat-label">Saat</div>
             </div>
         </div>
@@ -148,14 +148,14 @@
         <h2 class="section-title">Etkinlik Programı</h2>
         <div class="schedule-container">
             <div class="schedule-item">
-                <div class="schedule-time">09:00</div>
+                <div class="schedule-time-blue">09:00</div>
                 <div class="schedule-content">
                     <h3>Kayıt & Kahvaltı</h3>
                     <p>Katılımcı kayıtları ve hoş geldin kahvaltısı</p>
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">10:00</div>
+                <div class="schedule-time-red">10:00</div>
                 <div class="schedule-content">
                     <h3>Açılış Konuşması</h3>
                     <p>DevFest Adana 2025'e hoş geldiniz!</p>
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">10:30</div>
+                <div class="schedule-time-yellow">10:30</div>
                 <div class="schedule-content">
                     <h3>Keynote Konuşması</h3>
                     <p>Teknolojinin geleceği ve trendler</p>
@@ -171,7 +171,7 @@
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">11:30</div>
+                <div class="schedule-time-green">11:30</div>
                 <div class="schedule-content">
                     <h3>Teknik Oturum 1</h3>
                     <p>Paralel oturumlar - 3 farklı salon</p>
@@ -179,14 +179,14 @@
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">12:30</div>
+                <div class="schedule-time-blue">12:30</div>
                 <div class="schedule-content">
                     <h3>Öğle Yemeği Molası</h3>
                     <p>Networking ve yemek</p>
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">14:00</div>
+                <div class="schedule-time-red">14:00</div>
                 <div class="schedule-content">
                     <h3>Teknik Oturum 2</h3>
                     <p>Paralel oturumlar - 3 farklı salon</p>
@@ -194,14 +194,14 @@
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">15:30</div>
+                <div class="schedule-time-yellow">15:30</div>
                 <div class="schedule-content">
                     <h3>Workshop & Atölye Çalışmaları</h3>
                     <p>Uygulamalı eğitim oturumları</p>
                 </div>
             </div>
             <div class="schedule-item">
-                <div class="schedule-time">17:00</div>
+                <div class="schedule-time-green">17:00</div>
                 <div class="schedule-content">
                     <h3>Kapanış & Çekilişler</h3>
                     <p>Etkinlik kapanışı ve hediye çekilişleri</p>
@@ -210,72 +210,123 @@
         </div>
     </section>
 
-    <section id="prizes">
-        <h2 class="section-title">Hediyeler & Ödüller</h2>
+    <section id="sponsors">
+        <h2 class="section-title">Sponsorlarımız</h2>
         <p style="text-align: center; font-size: clamp(17px, 3.8vw, 22px); color: var(--text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 600;">
-            Tüm katılımcılarımız için harika hediyeler hazırladık! İşte etkinliğimizde kazanabileceğiniz bazı ödüller:
+            Etkinliğimizi mümkün kılan değerli sponsorlarımız:
         </p>
-        <div class="prizes-grid">
-            <div class="prize-card">
-                <div class="prize-icon">🎁</div>
-                <div class="prize-title">Katılımcı Kiti</div>
-                <div class="prize-desc">Tüm katılımcılara özel DevFest hediye paketi: t-shirt, sticker seti, not defteri ve daha fazlası!</div>
-            </div>
-            <div class="prize-card">
-                <div class="prize-icon">🏆</div>
-                <div class="prize-title">Büyük Ödüller</div>
-                <div class="prize-desc">Çekilişle kazanılacak özel ödüller: teknoloji ürünleri, kurslar ve sürpriz hediyeler.</div>
-            </div>
-            <div class="prize-card">
-                <div class="prize-icon">🎯</div>
-                <div class="prize-title">Workshop Sertifikaları</div>
-                <div class="prize-desc">Atölye çalışmalarına katılan tüm katılımcılara dijital katılım sertifikası verilecektir.</div>
-            </div>
-            <div class="prize-card">
-                <div class="prize-icon">🌟</div>
-                <div class="prize-title">Sponsor Hediyeleri</div>
-                <div class="prize-desc">Sponsorlarımızdan özel hediyeler, indirim kuponları ve kariyer fırsatları.</div>
+        <div class="sponsors-container">
+            <div class="sponsors-track">
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Red-Bull-Logo.png" alt="Red Bull" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png" alt="Google" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png" alt="Microsoft" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Apple-Logo.png" alt="Apple" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Dominos-Logo.png" alt="Domino's" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Nescafe-Logo.png" alt="Nescafe" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Razer-Logo.png" alt="Razer" />
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Red-Bull-Logo.png" alt="Red Bull" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png" alt="Google" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png" alt="Microsoft" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Apple-Logo.png" alt="Apple" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Dominos-Logo.png" alt="Domino's" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Nescafe-Logo.png" alt="Nescafe" />
+                </div>
+                <div class="sponsor-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Razer-Logo.png" alt="Razer" />
+                </div>
             </div>
         </div>
     </section>
 
 
-    <div class="cta-section">
+    <!-- <div class="cta-section">
         <h2>Yerinizi Ayırtın!</h2>
         <p>DevFest Adana 2025'te yerinizi şimdiden garantileyin. Kontenjan sınırlıdır!</p>
         <a href="https://kommunity.com/gdg-adana/events/devfest25-adana-ca0e3a08" target="_blank" class="cta-button">
             Ücretsiz Kayıt Ol
         </a>
-    </div>
+    </div> -->
 
     <footer>
         <div class="social-links">
-            <a href="https://www.instagram.com/gdg_adana/" target="_blank">
-                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#eb34d8"></path>
-                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#eb34d8"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#eb34d8"></path>
-                </svg>
-            </a>
-            <a href="https://x.com/gdg_adana" target="_blank">
-                <svg style="fill: #1DA1F2;" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-                    <path d="M13.523985,10.775623L19.480984,4h-1.41143l-5.174801,5.88195L8.764665,4H4l6.246901,8.895341L4,20h1.411431l5.461361-6.21299L15.235336,20H20L13.523985,10.775623z M11.590199,12.973429l-0.633908-0.886331L5.920428,5.041171h2.168246l4.065295,5.6884l0.631236,0.886331l5.283681,7.39365H15.90064L11.590199,12.973429z"/>
-                </svg>
-            </a>
-            <a href="https://tr.linkedin.com/company/gdg-adana" target="_blank">
-                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0056d6"></path>
-                    <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0056d6"></path>
-                    <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0056d6"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0056d6"></path>
-                </svg>
-            </a>
+            <a href="https://www.instagram.com/gdg_adana/" target="_blank"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#eb34d8"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#eb34d8"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#eb34d8"></path> </g></svg></a>
+            <a href="https://x.com/gdg_adana" target="_blank"><?xml version="1.0"?><svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><g><path d="M21.159809,2C21.623091,2,22,2.376909,22,2.840191v18.319618C22,21.623091,21.623091,22,21.159809,22H2.84019   C2.37691,22,2,21.623091,2,21.159809V2.840191C2,2.376909,2.37691,2,2.84019,2H21.159809 M21.159809,1H2.84019   C1.82388,1,1,1.823879,1,2.840191v18.319618C1,22.176121,1.82388,23,2.84019,23h18.319618C22.176121,23,23,22.176121,23,21.159809   V2.840191C23,1.823879,22.176121,1,21.159809,1L21.159809,1z"/></g><path d="M13.523985,10.775623L19.480984,4h-1.41143l-5.174801,5.88195L8.764665,4H4l6.246901,8.895341L4,20h1.411431  l5.461361-6.21299L15.235336,20H20L13.523985,10.775623z M11.590199,12.973429l-0.633908-0.886331L5.920428,5.041171h2.168246  l4.065295,5.6884l0.631236,0.886331l5.283681,7.39365H15.90064L11.590199,12.973429z"/></svg></a>
+            <a href="https://tr.linkedin.com/company/gdg-adana" target="_blank"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0056d6"></path> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0056d6"></path> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0056d6"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0056d6"></path> </g></svg></a>
         </div>
-        <p>&copy; 2025 GDG Adana. Tüm hakları saklıdır.</p>
+        <p class="translate" data-en="© 2025 GDG Community. All rights reserved." data-tr="© 2025 GDG Topluluğu. Tüm hakları saklıdır." style="color: white;">&copy; 2025 GDG Community. All rights reserved.</p>
         <p>
-            <span>Sevgiyle yapıldı </span>
-            <span style="display: inline-block; font-size: 24px;">❤️</span>
-            <span> GDG Adana Topluluğu tarafından</span>
+            <span class="translate" data-en="Made with" data-tr="Topluluğumuz tarafından">Made with</span>
+            <?xml version="1.0"?><svg id="Capa_1" style="enable-background:new 0 0 150 150; width: 30px; padding-bottom: -10px;" version="1.1" viewBox="0 0 150 120" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:#1A73E8;}
+	.st1{fill:#EA4335;}
+	.st2{fill:#4285F4;}
+	.st3{fill:#FBBC04;}
+	.st4{fill:#34A853;}
+	.st5{fill:#4CAF50;}
+	.st6{fill:#1E88E5;}
+	.st7{fill:#E53935;}
+	.st8{fill:#C62828;}
+	.st9{fill:#FBC02D;}
+	.st10{fill:#1565C0;}
+	.st11{fill:#2E7D32;}
+	.st12{fill:#F6B704;}
+	.st13{fill:#E54335;}
+	.st14{fill:#4280EF;}
+	.st15{fill:#34A353;}
+	.st16{clip-path:url(#SVGID_2_);}
+	.st17{fill:#188038;}
+	.st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+	.st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+	.st20{clip-path:url(#SVGID_4_);}
+	.st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+	.st22{clip-path:url(#SVGID_6_);}
+	.st23{fill:#FA7B17;}
+	.st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+	.st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+	.st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+	.st27{fill:url(#Finish_mask_1_);}
+	.st28{fill:#FFFFFF;}
+	.st29{fill:#0C9D58;}
+	.st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+	.st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+	.st32{fill:#FFC107;}
+	.st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+	.st34{opacity:0.2;}
+	.st35{fill:#1A237E;}
+	.st36{fill:url(#SVGID_7_);}
+	.st37{fill:#FBBC05;}
+	.st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+	.st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+	.st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+	.st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+            </style><g><path class="st7" d="M33.8,77.5l5.1,5.1L50,71.6l-5.1-5.1l0,0l-2.3-2.3c-1.9-1.9-2.8-4.3-2.8-6.9c0-2.3,0.8-4.4,2.1-6l0,0l0,0l0,0   l0,0c1.8-2.3,4.6-3.8,7.7-3.8c2.6,0,5.1,1,7,2.9l2.3,2.2l5.1,5.2L75,46.7l-5.2-5.1l-2.3-2.2c-4.6-4.6-11-7.5-18-7.5   C35.4,31.8,24,43.2,24,57.3c0,3.5,0.7,6.8,2,9.9c1.3,3.1,3.2,5.8,5.5,8.1L33.8,77.5"/><polyline class="st3" points="59.2,84.6 75,68.8 63.9,57.7 50,71.6 50,71.6 38.9,82.6 44.9,88.6 50,93.7 55.3,88.4  "/><polygon class="st4" points="86.1,107.6 111.1,82.6 100,71.6 75,96.5 61.1,82.7 50,93.7 63.9,107.6 63.9,107.7 75,118.2 75,118.2    75,118.2 86.1,107.6 86.1,107.6  "/><path class="st2" d="M118.5,75.2c5.2-5.2,8.2-13.1,7.3-21.2c-1.2-12.2-11.3-21.3-23.6-22.2c-7.7-0.5-14.8,2.4-19.8,7.4L63.9,57.7   L75,68.8l18.6-18.5c2.2-2.2,5.4-3.2,8.5-2.7c4.1,0.6,7.5,4.1,8.1,8.2c0.4,3.1-0.6,6.1-2.8,8.3l-7.4,7.4l11.1,11.1L118.5,75.2z"/></g></svg>
+            <span class="translate" data-en="by our community" data-tr="ile yapıldı">by our community</span>
         </p>
     </footer>
 
