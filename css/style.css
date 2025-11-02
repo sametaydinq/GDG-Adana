@@ -509,10 +509,6 @@ body.light-mode .stat-card {
 .stat-number {
     font-size: clamp(32px, 6vw, 48px);
     font-weight: bold;
-    background: linear-gradient(135deg, var(--google-blue), var(--google-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     margin-bottom: 10px;
 }
 

@@ -123,7 +123,7 @@ body.dark-mode .doodle-bg {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: clamp(18px, 5vw, 24px);
     font-weight: 900;
     display: flex;
     align-items: center;
@@ -303,12 +303,11 @@ body.dark-mode .doodle-bg {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: 0 4px 15px rgba(251, 188, 4, 0.4);
 }
 
 .mobile-theme-toggle:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(251, 188, 4, 0.6);
+    border: 1px solid var(--google-blue);
 }
 
 .mobile-theme-toggle img {
@@ -354,8 +353,8 @@ body.dark-mode .doodle-bg {
 }
 
 .shape1 {
-    width: 80px;
-    height: 80px;
+    width: clamp(40px, 10vw, 80px);
+    height: clamp(40px, 10vw, 80px);
     background: var(--google-blue);
     top: 10%;
     left: 10%;
@@ -363,8 +362,8 @@ body.dark-mode .doodle-bg {
 }
 
 .shape2 {
-    width: 60px;
-    height: 60px;
+    width: clamp(30px, 8vw, 60px);
+    height: clamp(30px, 8vw, 60px);
     background: var(--google-red);
     top: 60%;
     right: 15%;
@@ -372,8 +371,8 @@ body.dark-mode .doodle-bg {
 }
 
 .shape3 {
-    width: 100px;
-    height: 100px;
+    width: clamp(50px, 12vw, 100px);
+    height: clamp(50px, 12vw, 100px);
     background: var(--google-yellow);
     bottom: 15%;
     left: 20%;
@@ -381,8 +380,8 @@ body.dark-mode .doodle-bg {
 }
 
 .shape4 {
-    width: 70px;
-    height: 70px;
+    width: clamp(35px, 9vw, 70px);
+    height: clamp(35px, 9vw, 70px);
     background: var(--google-green);
     top: 30%;
     right: 25%;
@@ -467,12 +466,13 @@ body.dark-mode #time-svg {
 }
 
 .hero p {
-    font-size: clamp(18px, 4.5vw, 28px);
+    font-size: clamp(16px, 4vw, 24px);
     color: var(--text-secondary);
     margin-bottom: 35px;
     animation: slideUp 1s ease-out 0.4s backwards;
     line-height: 1.6;
     font-weight: 600;
+    padding: 0 10px;
 }
 
 @keyframes slideUp {
@@ -488,7 +488,7 @@ body.dark-mode #time-svg {
 
 .cta-button {
     display: inline-block;
-    padding: 18px 40px;
+    padding: clamp(14px, 3.5vw, 18px) clamp(30px, 7vw, 40px);
     background: linear-gradient(135deg, var(--google-blue), var(--google-green));
     color: #fff;
     text-decoration: none;
@@ -523,7 +523,7 @@ body.dark-mode #time-svg {
 }
 
 section {
-    padding: 80px 20px;
+    padding: clamp(40px, 10vw, 80px) 20px;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
@@ -552,10 +552,11 @@ section {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: clamp(-2px, -0.5vw, -1px);
-    line-height: 1.2;
+    line-height: 1.3;
     padding: 0 10px;
-    word-wrap: break-word;
-    hyphens: auto;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .section-title::after {
@@ -564,8 +565,8 @@ section {
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
-    height: 6px;
+    width: clamp(80px, 20vw, 120px);
+    height: clamp(4px, 1vw, 6px);
     background: linear-gradient(90deg, 
         var(--google-blue), 
         var(--google-red), 
@@ -580,8 +581,8 @@ section {
     max-width: 900px;
     margin: 0 auto 60px;
     background: var(--card-bg);
-    padding: 40px;
-    border-radius: 30px;
+    padding: clamp(25px, 6vw, 40px);
+    border-radius: clamp(20px, 5vw, 30px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     border: 4px solid var(--google-blue);
 }
@@ -609,21 +610,21 @@ section {
     width: 100%;
     margin: 0 auto 20px;
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: clamp(40px, 10vw, 75px);
     object-fit: contain;
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: clamp(15px, 4vw, 25px);
     margin-top: 50px;
 }
 
 .stat-card {
     background: var(--card-bg);
-    padding: 35px 20px;
-    border-radius: 25px;
+    padding: clamp(25px, 6vw, 35px) clamp(15px, 4vw, 20px);
+    border-radius: clamp(15px, 4vw, 25px);
     text-align: center;
     border: 4px solid;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -631,7 +632,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 170px;
+    min-height: clamp(140px, 30vw, 170px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
@@ -665,7 +666,7 @@ section {
 }
 
 .stat-number-red {
-    font-size: clamp(40px, 7vw, 60px);
+    font-size: clamp(40px, 10vw, 60px);
     background: rgb(231, 65, 65);
     font-weight: 900;
     -webkit-background-clip: text;
@@ -675,7 +676,7 @@ section {
 }
 
 .stat-number-blue {
-    font-size: clamp(40px, 7vw, 60px);
+    font-size: clamp(40px, 10vw, 60px);
     background: rgb(62, 175, 236);
     font-weight: 900;
     -webkit-background-clip: text;
@@ -685,7 +686,7 @@ section {
 }
 
 .stat-number-yellow {
-    font-size: clamp(40px, 7vw, 60px);
+    font-size: clamp(40px, 10vw, 60px);
     background: rgb(230, 171, 70);
     font-weight: 900;
     -webkit-background-clip: text;
@@ -695,7 +696,7 @@ section {
 }
 
 .stat-number-green {
-    font-size: clamp(40px, 7vw, 60px);
+    font-size: clamp(40px, 10vw, 60px);
     background: rgb(62, 178, 87);
     font-weight: 900;
     -webkit-background-clip: text;
@@ -711,7 +712,7 @@ section {
 }
 
 .stat-label {
-    font-size: clamp(15px, 3.2vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     color: var(--text-primary);
     font-weight: 700;
     text-transform: uppercase;
@@ -719,19 +720,19 @@ section {
 
 .speakers-grid, .prizes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: clamp(20px, 5vw, 30px);
     margin-top: 50px;
 }
 
 .speaker-card, .prize-card {
     background: var(--card-bg);
-    border-radius: 25px;
+    border-radius: clamp(15px, 4vw, 25px);
     overflow: hidden;
     border: 4px solid var(--google-blue);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    padding: 35px 25px;
+    padding: clamp(25px, 6vw, 35px) clamp(20px, 5vw, 25px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -753,8 +754,8 @@ section {
 }
 
 .speaker-photo {
-    width: 130px;
-    height: 130px;
+    width: clamp(100px, 25vw, 130px);
+    height: clamp(100px, 25vw, 130px);
     border-radius: 50%;
     background: linear-gradient(135deg, var(--google-blue), var(--google-green));
     margin: 0 auto 20px;
@@ -764,12 +765,12 @@ section {
     border: 5px solid white;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    font-size: 52px;
+    font-size: clamp(40px, 10vw, 52px);
     color: white;
 }
 
 .speaker-name, .prize-title {
-    font-size: clamp(20px, 4vw, 24px);
+    font-size: clamp(18px, 4.5vw, 24px);
     font-weight: 900;
     margin-bottom: 10px;
     color: var(--text-primary);
@@ -797,14 +798,14 @@ section {
 
 .schedule-item {
     background: var(--card-bg);
-    padding: 30px;
-    border-radius: 20px;
+    padding: clamp(20px, 5vw, 30px);
+    border-radius: clamp(12px, 3vw, 20px);
     border: 4px solid;
-    margin-bottom: 25px;
+    margin-bottom: clamp(15px, 4vw, 25px);
     transition: transform 0.3s, box-shadow 0.3s;
     display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 25px;
+    grid-template-columns: clamp(100px, 20vw, 140px) 1fr;
+    gap: clamp(15px, 4vw, 25px);
     align-items: center;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
@@ -824,51 +825,51 @@ section {
 }
 
 .schedule-time-yellow {
-    font-size: clamp(22px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 30px);
     font-weight: 900;
     color: white;
     text-align: center;
-    padding: 18px;
+    padding: clamp(12px, 3vw, 18px);
     background: #fbbc04;
-    border-radius: 15px;
+    border-radius: clamp(10px, 2.5vw, 15px);
     box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
 }
 
 .schedule-time-red {
-    font-size: clamp(22px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 30px);
     font-weight: 900;
     color: white;
     text-align: center;
-    padding: 18px;
+    padding: clamp(12px, 3vw, 18px);
     background: #ea4335;
-    border-radius: 15px;
+    border-radius: clamp(10px, 2.5vw, 15px);
     box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
 }
 
 .schedule-time-blue {
-    font-size: clamp(22px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 30px);
     font-weight: 900;
     color: white;
     text-align: center;
-    padding: 18px;
+    padding: clamp(12px, 3vw, 18px);
     background: #366fd9;
-    border-radius: 15px;
+    border-radius: clamp(10px, 2.5vw, 15px);
     box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
 }
 
 .schedule-time-green {
-    font-size: clamp(22px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 30px);
     font-weight: 900;
     color: white;
     text-align: center;
-    padding: 18px;
+    padding: clamp(12px, 3vw, 18px);
     background: #34a853;
-    border-radius: 15px;
+    border-radius: clamp(10px, 2.5vw, 15px);
     box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
 }
 
 .schedule-content h3 {
-    font-size: clamp(19px, 4vw, 24px);
+    font-size: clamp(17px, 4.2vw, 24px);
     margin-bottom: 10px;
     color: var(--text-primary);
     font-weight: 900;
@@ -876,7 +877,7 @@ section {
 }
 
 .schedule-content p {
-    font-size: clamp(14px, 3vw, 17px);
+    font-size: clamp(13px, 3.2vw, 17px);
     color: var(--text-secondary);
     margin-bottom: 6px;
     font-weight: 500;
@@ -896,7 +897,7 @@ section {
 }
 
 .prize-icon {
-    font-size: 70px;
+    font-size: clamp(50px, 12vw, 70px);
     margin-bottom: 20px;
     animation: bounce 2s ease-in-out infinite;
 }
@@ -908,20 +909,20 @@ section {
 
 .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: clamp(20px, 5vw, 30px);
     margin-top: 50px;
 }
 
 .sponsor-card {
     background: var(--card-bg);
-    padding: 40px;
-    border-radius: 20px;
+    padding: clamp(30px, 7vw, 40px);
+    border-radius: clamp(12px, 3vw, 20px);
     border: 4px solid var(--google-blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: clamp(140px, 30vw, 180px);
     transition: all 0.3s;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
@@ -936,7 +937,7 @@ section {
 }
 
 .sponsor-logo {
-    font-size: clamp(20px, 4.5vw, 26px);
+    font-size: clamp(18px, 5vw, 26px);
     font-weight: 900;
     color: var(--text-primary);
     text-align: center;
@@ -953,14 +954,14 @@ section {
 .sponsor-track {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: clamp(40px, 10vw, 60px);
     width: max-content;
     animation: sponsor-scroll 30s linear infinite;
 }
 
 .sponsor-logo-img {
-    height: 48px;
-    max-height: 48px;
+    height: clamp(36px, 8vw, 48px);
+    max-height: clamp(36px, 8vw, 48px);
     width: auto;
     filter: grayscale(100%);
     opacity: 0.9;
@@ -981,9 +982,9 @@ section {
 .cta-section {
     text-align: center;
     background: linear-gradient(135deg, var(--google-blue), var(--google-green));
-    padding: 80px 30px;
-    border-radius: 40px;
-    margin: 30px 20px;
+    padding: clamp(50px, 12vw, 80px) clamp(20px, 5vw, 30px);
+    border-radius: clamp(25px, 6vw, 40px);
+    margin: clamp(20px, 5vw, 30px) 20px;
     border: 6px solid white;
     position: relative;
     overflow: hidden;
@@ -991,7 +992,7 @@ section {
 }
 
 .cta-section h2 {
-    font-size: clamp(36px, 7vw, 70px);
+    font-size: clamp(28px, 8vw, 70px);
     margin-bottom: 25px;
     color: white;
     font-weight: 900;
@@ -1000,7 +1001,7 @@ section {
 }
 
 .cta-section p {
-    font-size: clamp(18px, 4vw, 26px);
+    font-size: clamp(16px, 4.5vw, 26px);
     margin-bottom: 40px;
     color: white;
     max-width: 700px;
@@ -1014,7 +1015,7 @@ section {
     background: white;
     color: var(--google-blue);
     border: 4px solid white;
-    font-size: clamp(18px, 3.5vw, 24px);
+    font-size: clamp(16px, 4vw, 24px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -1026,23 +1027,25 @@ section {
 
 footer {
     background: #0a0a0a;
-    padding: 40px 20px;
+    padding: clamp(30px, 7vw, 40px) 20px;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;  /* Added */
-    z-index: 1;  /* Added */
+    position: relative;
+    z-index: 1;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: clamp(15px, 4vw, 20px);
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .social-links svg {
     transition: all 0.3s;
+    width: clamp(20px, 5vw, 25px);
+    height: clamp(20px, 5vw, 25px);
 }
 
 .social-links svg:hover {
@@ -1156,6 +1159,14 @@ footer p {
     .mobile-text {
         display: block;
     }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1193,6 +1204,14 @@ footer p {
         line-height: 1.4;
         letter-spacing: -2px;
     }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar.scrolled {
+        padding: 10px 20px;
+    }
 }
 
 /* Space Button Styles - Google Theme */
@@ -1206,9 +1225,9 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13rem;
+    width: clamp(11rem, 30vw, 13rem);
     overflow: hidden;
-    height: 3rem;
+    height: clamp(2.5rem, 7vw, 3rem);
     background-size: 300% 300%;
     cursor: pointer;
     backdrop-filter: blur(1rem);
@@ -1242,8 +1261,8 @@ footer p {
 .btn strong {
     z-index: 2;
     font-family: "Avalors Personal Use";
-    font-size: 12px;
-    letter-spacing: 5px;
+    font-size: clamp(10px, 2.5vw, 12px);
+    letter-spacing: clamp(2px, 1vw, 5px);
     color: #ffffff;
     text-shadow: 0 0 4px white;
 }
@@ -1251,12 +1270,12 @@ footer p {
 #glow {
     position: absolute;
     display: flex;
-    width: 12rem;
+    width: clamp(10rem, 28vw, 12rem);
 }
 
 .circle {
     width: 100%;
-    height: 30px;
+    height: clamp(20px, 5vw, 30px);
     filter: blur(2rem);
     animation: pulse_3011 4s infinite;
     z-index: -1;
@@ -1381,7 +1400,7 @@ footer p {
 
 /* Sponsors Section */
 #sponsors {
-    padding: 80px 20px;
+    padding: clamp(50px, 12vw, 80px) 20px;
     background: var(--bg-secondary);
     overflow: hidden;
 }
@@ -1395,7 +1414,7 @@ footer p {
 .sponsors-track {
     display: flex;
     animation: scroll 30s linear infinite;
-    gap: 60px;
+    gap: clamp(40px, 10vw, 60px);
     align-items: center;
 }
 
@@ -1404,10 +1423,10 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 200px;
+    height: clamp(60px, 15vw, 80px);
+    width: clamp(150px, 35vw, 200px);
     background: white;
-    border-radius: 12px;
+    border-radius: clamp(8px, 2vw, 12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1418,8 +1437,8 @@ footer p {
 }
 
 .sponsor-logo img {
-    max-height: 60px;
-    max-width: 160px;
+    max-height: clamp(45px, 12vw, 60px);
+    max-width: clamp(120px, 30vw, 160px);
     object-fit: contain;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
@@ -1450,4 +1469,84 @@ body.dark-mode .sponsor-logo img {
 
 body.dark-mode .sponsor-logo:hover img {
     filter: grayscale(0%) brightness(1);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: clamp(15px, 4vw, 30px);
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: clamp(70px, 20vw, 120px);
+}
+
+.time-value {
+    font-size: clamp(32px, 10vw, 64px);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: clamp(5px, 2vw, 10px);
+    color: #202124;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    paint-order: stroke fill;
+}
+
+body.dark-mode .time-value {
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+}
+
+.time-label {
+    font-size: clamp(12px, 3.5vw, 18px);
+    font-weight: 400;
+    color: #5f6368;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.days .time-value {
+    color: #4285f4;
+}
+
+.hours .time-value {
+    color: #34a853;
+}
+
+.minutes .time-value {
+    color: #fbbc04;
+}
+
+.seconds .time-value {
+    color: #ea4335;
+}
+
+.target-date {
+    margin-top: clamp(30px, 7vw, 40px);
+    font-size: clamp(16px, 4vw, 18px);
+    color: #5f6368;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .time-value {
+        font-size: clamp(28px, 12vw, 48px);
+    }
+
+    .time-label {
+        font-size: clamp(11px, 4vw, 14px);
+    }
+
+    .countdown {
+        gap: clamp(10px, 3vw, 20px);
+    }
+
+    .time-unit {
+        min-width: clamp(60px, 22vw, 80px);
+    }
 }
