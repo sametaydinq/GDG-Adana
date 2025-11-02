@@ -75,7 +75,6 @@ function initializeLogo() {
 }
 
 // Initialize on page load
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', initializeLogo);
 
 const targetDate = new Date('2025-11-29T10:00:00').getTime();
@@ -105,6 +104,5 @@ const targetDate = new Date('2025-11-29T10:00:00').getTime();
 
         updateCountdown();
         setInterval(updateCountdown, 1000);
-=======
+
 document.addEventListener('DOMContentLoaded', initializeLogo);
->>>>>>> 4f7f545d5095860d794bfc412d3d6fcf7b3be415
